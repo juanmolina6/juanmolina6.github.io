@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Generar Invitación</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container" style="text-align: center;">
+            <img src="https://i.ibb.co/q7g07yT/Gemini-Generated-Image-3w6xbd3w6xbd3w6x.jpg" alt="Logo" style="width: 100px; height: auto;">
+        </div>
+        <h2>Generar Invitación</h2>
+
+        
+        <form id="invitationForm">
+            <label for="inviteeFirstName">Nombre:</label>
+            <input type="text" id="inviteeFirstName" name="inviteeFirstName" required>
+
+            <label for="inviteeLastName">Apellido:</label>
+            <input type="text" id="inviteeLastName" name="inviteeLastName" required>
+
+            <label for="inviteePhone">Teléfono:</label>
+            <input type="tel" id="inviteePhone" name="inviteePhone" required>
+
+            <label for="inviteeIdNumber">Número de ID:</label>
+            <input type="text" id="inviteeIdNumber" name="inviteeIdNumber" required>
+
+            <label for="entryEstimate">Estimación de Entrada:</label>
+            <input type="datetime-local" id="entryEstimate" name="entryEstimate" required>
+
+            <label for="exitEstimate">Estimación de Salida:</label>
+            <input type="datetime-local" id="exitEstimate" name="exitEstimate" required>
+
+            <button type="submit">Enviar Invitación</button>
+        </form>
+
+        
+        <div id="confirmationMessage" style="display: none; text-align: center;">
+            <p>Invitación Enviada</p>
+            
+            <img src="https://i.ibb.co/KmbWKTs/qrcode-generado.png" alt="Imagen de Confirmación" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+        </div>
+    </div>
+
+    <script>
+        
+        document.getElementById("invitationForm").addEventListener("submit", function(event) {
+            event.preventDefault();  
+
+            
+            document.getElementById("confirmationMessage").style.display = "block";
+            
+        });
+    </script>
+</body>
+</html>

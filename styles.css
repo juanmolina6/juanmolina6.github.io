@@ -1,0 +1,147 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 400px; 
+    width: 100%;
+    background: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+
+.logo-container {
+    margin-bottom: 15px;
+    text-align: center; 
+}
+
+
+.logo-container img {
+    width: 100px; 
+    height: auto; 
+}
+
+
+h1, h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    width: 90%; 
+    max-width: 300px; 
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+
+form {
+    width: 100%; 
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="datetime-local"],
+textarea {
+    width: 100%; 
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.response {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff0000; 
+    font-weight: bold;
+}
+
+
+.action-button {
+    background-color: #28a745; 
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background-color: #218838;
+}
+
+.logo-container img {
+    width: 100px; 
+    height: auto; 
+}
+
+.response {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;  
+    font-weight: bold;
+    display: none;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registro de Datos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container" style="text-align: center;">
+            <img src="https://i.ibb.co/q7g07yT/Gemini-Generated-Image-3w6xbd3w6xbd3w6x.jpg" alt="Logo" style="width: 100px; height: auto;">
+        </div>
+        <h2>Registro de Datos</h2>
+        <form id="formDatos">
+            <label for="firstName">Nombre:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Apellido:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="idNumber">Número de ID:</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="apartment">Apartamento:</label>
+            <input type="text" id="apartment" name="apartment" required>
+
+            <label for="vehicle">¿Tiene vehículo?</label>
+            <input type="text" id="vehicle" name="vehicle" placeholder="Marca y modelo (opcional)">
+
+            <label for="numPeople">Número de personas:</label>
+            <input type="number" id="numPeople" name="numPeople" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+        
+        <div class="response" id="dataResponse" style="display:none;">
+            Datos registrados exitosamente.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
